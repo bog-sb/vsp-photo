@@ -1,0 +1,10 @@
+.sliderPhoto{
+	max-height:100%;
+	max-width:auto;
+}
+
+.sliderThumb{
+	max-height:40px;
+	max-width:40px;
+	overflow: hidden;
+}
