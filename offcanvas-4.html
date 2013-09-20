@@ -13,10 +13,9 @@
 
 	<!-- Included CSS Files -->
   <link rel="stylesheet" href="stylesheets/app.css">
-  <link rel="stylesheet" href="stylesheets/style.css">
   <link rel="stylesheet" href="stylesheets/offcanvas.css">
   <link rel="stylesheet" href="flexslider/flexslider.css">
-
+  <link rel="stylesheet" href="stylesheets/style.css">
   <script src="javascripts/foundation/modernizr.foundation.js"></script>
 
 </head>
@@ -35,25 +34,62 @@
   		<section role="main">
   			<div class="row">
 
-        <div class="two columns">
-          <nav id="menu" role="navigation" class="hide-for-small">
-            <ul id="mainNav" class="side-nav">
-              <li><a href="">Portets</a></li>
-              <li><a href="">Street Photography</a></li>
-              <li><a href="">Studio</a></li>
-              <li><a href="">Landscapes</a></li>
-            </ul>
-          </nav>
-          <p class="show-for-small">
-            <a class='sidebar-button button' id="sidebarButton" href="#sidebar" >Menu</a>
-          </p>
-        </div>
+          <!-- Side navigation -->
+          <div class="two columns">
+            <nav id="menu" role="navigation" class="hide-for-small">
+              <ul id="mainNav" class="side-nav accordion">
 
+                <li >
+                  <div class="title">
+                      <h5>Portets</h5>
+                  </div>
+                  <div class="content">
+                    <a href="">Gallery 1</a>
+                    <a href="">Gallery 2</a>
+                  </div>
+                </li>
 
+                <li>
+                  <div class="title">
+                      <h5>Street Photography</h5>
+                  </div>
+                  <div class="content">
+                    <a href="">Gallery 1</a>
+                    <a href="">Gallery 2</a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="title">
+                      <h5>Nature</h5>
+                  </div>
+                  <div class="content">
+                    <a href="">Gallery 1</a>
+                    <a href="">Gallery 2</a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="title">
+                      <h5>Landscapes</h5>
+                  </div>
+                  <div class="content">
+                    <a href="">Gallery 1</a>
+                    <a href="">Gallery 2</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <p class="show-for-small">
+              <a class='sidebar-button button' id="sidebarButton" href="#sidebar" >Menu</a>
+            </p>
+          </div>
+
+          <!--     Main body    -->
   			  <div class="ten columns">
 
             <!-- Place somewhere in the <body> of your page -->
-            <div id="slider" class="flexslider" style="max-width:500px; max-height:500px; margin:0 auto;">
+            <div id="slider" class="flexslider" style="<!-- max-width:500px; --> max-height:400px; margin:0 auto;">
               <ul class="slides">
                 <li>
                   <img class="sliderPhoto" src="photos/gallery1/1.jpg" />
@@ -79,7 +115,7 @@
                 <!-- items mirrored twice, total of 12 -->
               </ul>
             </div>
-            <div id="carousel" class="flexslider" style="max-width:500px; margin:0 auto;">
+            <div id="carousel" class="flexslider" style="<!-- max-width:500px;  -->margin:0 auto;">
               <ul class="slides">
                 <li>
                   <img class="sliderThumb" src="photos/gallery1/1.jpg" />
@@ -127,12 +163,48 @@
 
   		<section id="sidebar" role="complementary">
 				<nav id="sideMenu" role="navigation">
-    			<ul id="sideMainNav" class="nav-bar">
-    				<li><a href="">Portets</a></li>
-    				<li><a href="">Street Photography</a></li>
-    				<li><a href="">Studio</a></li>
-    				<li><a href="">Landscapes</a></li>
-    			</ul>
+    			<ul id="mainNav" class="side-nav accordion">
+
+                <li>
+                  <div class="title">
+                      <h5>Portets</h5>
+                  </div>
+                  <div class="content">
+                    <a href="">Gallery 1</a>
+                    <a href="">Gallery 2</a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="title">
+                      <h5>Street Photography</h5>
+                  </div>
+                  <div class="content">
+                    <a href="">Gallery 1</a>
+                    <a href="">Gallery 2</a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="title">
+                      <h5>Nature</h5>
+                  </div>
+                  <div class="content">
+                    <a href="">Gallery 1</a>
+                    <a href="">Gallery 2</a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="title">
+                      <h5>Landscapes</h5>
+                  </div>
+                  <div class="content">
+                    <a href="">Gallery 1</a>
+                    <a href="">Gallery 2</a>
+                  </div>
+                </li>
+              </ul>
     		</nav>
   		</section>
 		</div>
@@ -171,7 +243,7 @@
         animation: "slide",
         controlNav: false,
         animationLoop: false,
-        slideshow: false,
+        slideshow: true,
         itemWidth: 210,
         itemMargin: 5,
         asNavFor: '#slider'
